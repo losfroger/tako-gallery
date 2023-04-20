@@ -4,5 +4,6 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-quasar-ui',
     '@nuxt/devtools',
-  ]
+    '@nuxtjs/eslint-module',
+  ],
 })

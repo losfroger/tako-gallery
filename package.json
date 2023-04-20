@@ -11,9 +11,12 @@
   "devDependencies": {
     "@nuxt/devtools": "^0.4.1",
     "@types/node": "^18",
-    "nuxt": "^3.4.1"
+    "nuxt": "^3.4.1",
+    "nuxt-quasar-ui": "^1.7.0"
   },
   "dependencies": {
-    "@nuxtjs/tailwindcss": "^6.6.6"
+    "@nuxtjs/tailwindcss": "^6.6.6",
+    "@quasar/extras": "^1.16.2",
+    "quasar": "^2.11.10"
   }
 }

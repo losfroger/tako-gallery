@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
+    'nuxt-quasar-ui',
     '@nuxt/devtools',
   ]
 })

@@ -5,37 +5,35 @@
         v-if="submission.illustration"
         class="illustration-wrapper tw-relative tw-aspect-square tw-w-full tw-overflow-clip"
       >
-        <QImg
-          loading="lazy"
-          spinner-color="white"
-          ratio="1"
+        <NuxtImg
           fit="cover"
-          class="tw-pointer-events-none tw-absolute tw-top-0 tw-h-auto tw-w-full tw-opacity-70 tw-blur-lg"
+          class="tw-absolute tw-top-0 tw-h-full tw-w-full tw-cursor-pointer tw-overflow-clip tw-blur-lg"
+          width="120px"
+          height="120px"
+          format="webp"
           :src="illustration_path"
         />
-        <QImg
-          loading="lazy"
-          spinner-color="white"
-          ratio="1"
+        <NuxtImg
           fit="contain"
-          class="tw-h-auto tw-w-full tw-cursor-pointer tw-overflow-clip"
+          class="tw-absolute tw-top-1/2 -tw-translate-y-1/2 tw-cursor-pointer tw-overflow-clip"
+          sizes="lg:320px"
+          format="webp"
           :src="illustration_path"
           @click="showDialog = true"
-        >
-          <QIcon
-            v-if="submission.is_3d"
-            class="tw-absolute tw-bottom-2 tw-left-2 tw-ml-auto tw-drop-shadow-md"
-            size="sm"
-            color="cyan-12"
-            name="mdi-cube-outline"
-          />
-        </QImg>
+        />
+        <QIcon
+          v-if="submission.is_3d"
+          class="tw-absolute tw-bottom-2 tw-left-2 tw-ml-auto tw-drop-shadow-md"
+          size="sm"
+          color="cyan-12"
+          name="mdi-cube-outline"
+        />
       </div>
       <div class="tw-flex tw-flex-col tw-gap-2 tw-p-2">
         <div class="tw-flex tw-flex-row tw-items-center tw-gap-2">
           <NuxtImg
             v-if="tako_pfp_path"
-            class="tw-rounded-full tw-bg-white"
+            class="tw-rounded-[100%] tw-bg-white tw-transition-all tw-duration-500"
             format="webp"
             sizes="sm:32px md:64px"
             :src="tako_pfp_path"
@@ -50,12 +48,20 @@
             <h1 class="tw-my-0 tw-text-lg">
               {{ submission.discord }}
             </h1>
-            <h2
+            <a
               v-if="submission.twitter"
-              class="tw-my-0 tw-flex tw-cursor-pointer tw-items-center tw-gap-1 tw-text-sm tw-transition-colors hover:tw-text-accent"
+              class="tw-flex tw-items-center tw-gap-1 tw-text-sm tw-text-accent tw-no-underline tw-transition-colors hover:tw-text-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              :href="`https://twitter.com/${twitter_username}`"
             >
-              <Icon name="ph:twitter-logo" /> {{ submission.twitter?.replaceAll('@', '') }}
-            </h2>
+              <Icon name="ph:twitter-logo" />
+              <h2
+                class="tw-my-0 tw-text-sm"
+              >
+                {{ twitter_username }}
+              </h2>
+            </a>
           </div>
         </div>
         <div class="divider" />
@@ -69,21 +75,19 @@
       maximized
       @click="showDialog = false"
     >
-      <!--
-
       <div
-      v-if="submission.is_3d"
-      class="3d-viewer tw-flex tw-w-full tw-flex-row tw-items-center tw-justify-center"
+        v-if="submission.is_3d"
+        class="3d-viewer tw-flex tw-w-full tw-flex-row tw-items-center tw-justify-center"
       >
-      <div class="tw-overflow-clip tw-rounded-md tw-bg-white">
-        <ModelViewer
-        :model="props.submission.submission_url"
-        class="tw-aspect-square tw-h-[85vh]"
-        />
+        <div class="tw-overflow-clip tw-rounded-md tw-bg-white">
+          <ModelViewer
+            :model="model_path"
+            class="tw-aspect-square tw-h-[85vh]"
+          />
+        </div>
       </div>
-    </div>
-    -->
       <div
+        v-else
         class="2d-viewer tw-flex tw-w-full tw-flex-row tw-items-center tw-justify-center"
       >
         <img
@@ -110,10 +114,12 @@ const props = defineProps({
   }
 })
 
-const illustration_path = computed(() => props.submission.illustration ? `/submissions/illustrations/${props.submission.illustration}` : '')
-
-const tako_pfp_path = computed(() => props.submission.tako_pfp ? `/submissions/pfp/${props.submission.tako_pfp}` : '')
 const showDialog = ref(false)
+
+const illustration_path = computed(() => props.submission.illustration ? `/submissions/illustrations/${props.submission.illustration}` : '')
+const tako_pfp_path = computed(() => props.submission.tako_pfp ? `/submissions/pfp/${props.submission.tako_pfp}` : '')
+const model_path = computed(() => props.submission.model ? `/submissions/3d-models/${props.submission.model}` : '')
+const twitter_username = computed(() => props.submission.twitter ? props.submission.twitter?.trim().toLowerCase().replaceAll('@', '').replaceAll(' ', '_') : '')
 
 </script>
 

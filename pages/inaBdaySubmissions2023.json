@@ -1,458 +1,629 @@
 {
-    "images": [{
+    "submissions": [{
+        "date": "",
         "index": 1,
         "discord": "chimkin#9807",
         "tako_pfp": "",
         "twitter": "@ghoul_of_terror",
         "message": "I hope your birthday will be just as happy as how much you made us Inaaa",
-        "illustration": "Screenshot 2023-04-30 at 12.00.26 PM - TheGhostlyTerror.png"
+        "illustration": "Screenshot 2023-04-30 at 12.00.26 PM - TheGhostlyTerror.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 2,
         "discord": "Geroniny/Cassini#4540",
         "tako_pfp": "TakoGero - Zhi Ying (Geroniny).png",
         "twitter": "@geroniny",
         "message": "Happy Birthday, Ina!\n\nThank you for being there for me, during a few of my hard times. I will continue to try my best to overcome those challenges with you, and the Tentacult, one step at a time.\n\nMay your wishes be heard and come true by the stars!",
-        "illustration": "InabirthdayAggieGero - Zhi Ying (Geroniny).png"
+        "illustration": "InabirthdayAggieGero - Zhi Ying (Geroniny).png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 3,
         "discord": "Galephantom (Galemont)#6913",
         "tako_pfp": "",
         "twitter": "@Galemont",
         "message": "Happy Birthday Ina!!!! Have a good one here is to a fun year. I'm not an Artist at heart but I tried my best with the resources I have.",
-        "illustration": "birthday - Michael Millward.png"
+        "illustration": "birthday - Michael Millward.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 4,
         "discord": "NebulaStarlight#6478",
         "tako_pfp": "NebulaTakoverse - Nebula Starlight.png",
         "twitter": "@StellarFoxNebi",
         "message": "Ina, your streams and clips are a constant source of inspiration for me. Your personality and humour have gotten me through dark times, and made the good times great! Thank you so much for everything! Happy Birthday, Ina! - Nebula Starlight",
-        "illustration": ""
+        "illustration": "",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 5,
         "discord": "naimahchoremail#9488",
         "tako_pfp": "",
         "twitter": "@Naimahthecutest",
         "message": "Happy Birthday Ina!! thank you for putting all your hard work for us.. We really appreciate every stream and videos you make..your drawings are very WAHderful it makes me motivated to draw more and become like you.. Thats all from me thank u HBD Ina!",
-        "illustration": "AAD0CE40-28EE-425E-8561-84D2DE9D32B4 - naimah batrisyia.jpeg"
+        "illustration": "AAD0CE40-28EE-425E-8561-84D2DE9D32B4 - naimah batrisyia.jpeg",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 6,
         "discord": "kinokoneko1027#3126",
         "tako_pfp": "KinoTako2 - Alex Fung.png",
         "twitter": "@kinokoneko1027",
         "message": "Happy Birthday Ina! Even though the timezone have made it hard for me to watch your streams live, but still I enjoy watching your vods! Its been busy due to being a postgrad, and your vods have been keeping me sane. I really appreciate it. Thank you.",
-        "illustration": "Ina2023Birthday_Kinoko - Alex Fung.jpg"
+        "illustration": "Ina2023Birthday_Kinoko - Alex Fung.jpg",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 7,
         "discord": "Homurakuma#0815",
         "tako_pfp": "Takoverse - Homurakuma.png",
         "twitter": "@homurakuma01",
         "message": "Happy birthday Ina! Here's to another WAHnderful year!",
-        "illustration": ""
+        "illustration": "",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 8,
         "discord": "Basher#8479",
         "tako_pfp": "Takoverse - Jormn Altrider.png",
         "twitter": "@MrJormn97",
         "message": "Happy Birthday, Inaaa!!\n\nThanks for so many memories, adventures and for inspiring me to draw again! Hope you have another wonderful year in hololive with us Takodachis! WAH!",
-        "illustration": "ina birthday 2023 - Jormn Altrider.png"
+        "illustration": "ina birthday 2023 - Jormn Altrider.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 9,
         "discord": "KShut#0339",
         "tako_pfp": "takodachi - Kenneth Shuto.png",
         "twitter": "@shutowl",
         "message": "Please accept my most sincere \"𝓦𝓐𝓗\" for this special occasion. Hope many cakes are consumed and many presents are gifted :D.",
-        "illustration": "ina lying down pose - Kenneth Shuto.png"
+        "illustration": "ina lying down pose - Kenneth Shuto.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 10,
         "discord": "Solodestructo#4686",
         "tako_pfp": "Takodachi profile pic - Solodestructo.png",
         "twitter": "@solodestructo",
         "message": "Hi Ina! I love all the entertainment and drawings you do as they inspire me to continue on creating my own art as well! You are my oshi and hope that one day I will be as talented as you. Happy birthday and keep doing what you do best!",
-        "illustration": "Ina paintingS - Solodestructo.jpg"
+        "illustration": "Ina paintingS - Solodestructo.jpg",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 11,
         "discord": "JHow#5121",
         "tako_pfp": "",
         "twitter": "@tian_sik",
         "message": "",
-        "illustration": "88D17DB6-7A46-4C5B-88E6-321B7EE79E68 - J-How Huang.jpeg"
+        "illustration": "88D17DB6-7A46-4C5B-88E6-321B7EE79E68 - J-How Huang.jpeg",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 12,
         "discord": "Neftiaf#6721",
         "tako_pfp": "me - Ibrahyn Olivas.png",
         "twitter": "@Neftiaf",
         "message": "HBD Inya~ do continue doing your best and do take care of your health~",
-        "illustration": "inya - Ibrahyn Olivas.png"
+        "illustration": "inya - Ibrahyn Olivas.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 13,
         "discord": "Mostly Safe#1178",
         "tako_pfp": "",
         "twitter": "",
         "message": "HAPPY BIRTHDAY INA!\n\nIt's been another year for our wonderful priestess. Words cannot express how great it's been getting to watch you stream and have fun with all of us takodachis. Thank you for all the great times you've given us!",
-        "illustration": ""
+        "illustration": "",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 14,
         "discord": "Abbypie7#5353",
         "tako_pfp": "Abby tako - Quack bob.png",
         "twitter": "@AbbyMay5",
         "message": "Hi ina happy life day i just want to say you have helped me through some hard times in my life and u have inspired me to start vtubing myself and maybe try to audition for hololive one day u always put a smile on my face when u stream  best idol ina ",
-        "illustration": ""
+        "illustration": "",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 15,
         "discord": "MentegaTerbang#7203",
         "tako_pfp": "kumitako - adrian habibie.png",
         "twitter": "@melkismelk",
         "message": "Happy WAHday inyaaa, hope you can achieve all your goals, become more success, and always healty, and may happiness always be with you !",
-        "illustration": "inew hbd - adrian habibie.png"
+        "illustration": "inew hbd - adrian habibie.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 16,
         "discord": "Suzuri#6472",
         "tako_pfp": "",
         "twitter": "@BluesZX22",
         "message": "Happy 3rd birthday Ina!!! We've takos seen you grow so much in these 3 years even though sometimes it got a little rocky. Keep being awesome and hears to another year with the takos!!!",
-        "illustration": ""
+        "illustration": "",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 17,
         "discord": "Plasma#2841",
         "tako_pfp": "Tako2 - Jhon. Palmer.png",
         "twitter": "@jhonpalmer_",
         "message": "Happy Birthday Ina! Hope you have a very good one! Thank you for another amazing year togethaaa!",
-        "illustration": "INA_4_B - Jhon. Palmer.jpg"
+        "illustration": "INA_4_B - Jhon. Palmer.jpg",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 18,
         "discord": "Cool Beans ඞ#7348",
         "tako_pfp": "Suriame nbg - kenneth aniag.png",
         "twitter": "@NoWaresMerchant",
         "message": "WAH!!!!!! Happy Birthday Ina!!! thank you so much for your comfy streams!!!",
-        "illustration": "Ina BD 2023 - kenneth aniag.png"
+        "illustration": "Ina BD 2023 - kenneth aniag.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 19,
         "discord": "Lishi#4227",
         "tako_pfp": "",
         "twitter": "@3_lishi",
         "message": "Happy Ina Day! Thank you for always being the awesome tako you are! You're always bringing a dose of happiness and comfiness to all the takos in the world, even when some of us are having a rough day. Hope you eat lots of yummy stuff~",
-        "illustration": ""
+        "illustration": "",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 20,
         "discord": "Hawksterr#6268",
         "tako_pfp": "tako2022 - Hawksterr.png",
         "twitter": "",
         "message": "Happy birthday!\nHere's to another year of fun :)",
-        "illustration": "Akifigure - Hawksterr.png"
+        "illustration": "Akifigure - Hawksterr.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 21,
         "discord": "Hawksterr#6268",
         "tako_pfp": "tako2022 - Hawksterr.png",
         "twitter": "",
         "message": "Happy birthday!\nHere's to another year of fun :)",
-        "illustration": "FlareFigure - Hawksterr.png"
+        "illustration": "FlareFigure - Hawksterr.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 22,
         "discord": "Hawksterr#6268",
         "tako_pfp": "tako2022 - Hawksterr.png",
         "twitter": "",
         "message": "Happy birthday!\nHere's to another year of fun :)",
-        "illustration": "OkayuFigure2 - Hawksterr.png"
+        "illustration": "OkayuFigure2 - Hawksterr.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 23,
         "discord": "Hawksterr#6268",
         "tako_pfp": "tako2022 - Hawksterr.png",
         "twitter": "",
         "message": "Happy birthday!\nHere's to another year of fun :)",
-        "illustration": "OllieFigure3 - Hawksterr.png"
+        "illustration": "OllieFigure3 - Hawksterr.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 24,
         "discord": "Granlitar#8096",
         "tako_pfp": "Gran Ina Birthday 2023 Tako PFP - Gran Litar.png",
         "twitter": "@granlitar",
         "message": "Happy Birthday Ina!\n\nYou've worked super hard this year and been part of so many awesome projects. Thanks for everything always you do for us Takos!\n\nHope you get to eat plenty of yummy cake, you deserve it! WAH!",
-        "illustration": ""
+        "illustration": "",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 25,
         "discord": "Yato_corne#2395",
         "tako_pfp": "Yato_Tako - Yato Tako.png",
         "twitter": "@Yato_Tako",
         "message": "Happy Birthday Ina, hope this year will be full of fun and excitements. Looking forward to 3D birthday, EN concert and all other projects you have planned for us.  May your cookies be always be chocolate chip and never be raisins.",
-        "illustration": ""
+        "illustration": "",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 26,
         "discord": "Lyudmilia#7948",
         "tako_pfp": "lyudtako - Lyudmilia.png",
         "twitter": "@lyudmilia",
         "message": "Happy birthday Ina!!! Ecstatic to celebrate your birthday again. I say this a lot but I do mean it that I'm always looking forward to whatever you come up with. Anything it may be! I hope you have a splendid birthday! You'll always have my support!",
-        "illustration": ""
+        "illustration": "",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 27,
         "discord": "Alin#9776",
         "tako_pfp": "takolin - Alin Laphel.png",
         "twitter": "@alin_laphel",
         "message": "Here we see a variation of the dumbo octopus. Smug in it's habitat and enjoying her yearly festivities. We shall wish her a happy birthday.",
-        "illustration": "inapose - Alin Laphel.png"
+        "illustration": "inapose - Alin Laphel.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 28,
         "discord": "Legitory#1747",
         "tako_pfp": "Takoverse (1) - Legitory.png",
         "twitter": "@Legitory🐙",
         "message": "Happy Birthday Ina!! Hope you enjoy all the messages and gifts we takos prepared for you and get a lot of Call-ins on the Birthday stream! WAH!",
-        "illustration": "Ina Birthday - Legitory.png"
+        "illustration": "Ina Birthday - Legitory.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 29,
         "discord": "Tethaku#3882",
         "tako_pfp": "Takoverse - Tethaku.png",
         "twitter": "@Tethaku",
         "message": "Happy Birthday Ina!!! Thank you for inspiring me to keep making art!",
-        "illustration": "Ina birthday - Tethaku.jpg"
+        "illustration": "Ina birthday - Tethaku.jpg",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 30,
         "discord": "jamie_97#0742",
         "tako_pfp": "Cassie_Tako - Jitrapon Lertprasertpong.PNG",
         "twitter": "@Alpha_Cas_art",
         "message": "Happy Birthday Ina! I am so happy to celebrate your birthday for the third time! ^0^\nThank you for bringing happiness to all of us Takodachi. This year, I am looking forward to meeting you at the Hololive EN Connect. :D",
-        "illustration": "Ina_birthday2023 - Jitrapon Lertprasertpong.PNG"
+        "illustration": "Ina_birthday2023 - Jitrapon Lertprasertpong.PNG",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 31,
         "discord": "Thokaulfr#4954",
         "tako_pfp": "Thakoulfr - Thoka Ulfr.png",
         "twitter": "@thokaulfr",
         "message": "Last year I wished you to have hearty meals and good rest. This year, I believe you already have it. There are no greater blessing than seeing you smile.",
-        "illustration": ""
+        "illustration": "",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 32,
         "discord": "Requiem#6901",
         "tako_pfp": "",
         "twitter": "@Yoireq",
         "message": "Happy Birthday Ina! Have a WAHderful birthday",
-        "illustration": "IMG_1315 - Khoa Ly.png"
+        "illustration": "IMG_1315 - Khoa Ly.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 33,
         "discord": "Jabber#9546",
         "tako_pfp": "Tako - Jabber.png",
         "twitter": "@JabberFluffy",
         "message": "Inyaaa~ Happy Birthday!! can't belive another full year spend and is this day again, as always  I wish you a wonderful day, have a lot of yummy food, eat yummy cake, rest, let me squish the squishy, happy moments and fun!! love you Ina.",
-        "illustration": "Inyaaaa B-day - Jabber.jpg"
+        "illustration": "Inyaaaa B-day - Jabber.jpg",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 34,
         "discord": "wild tako🐙⏳🪶#2002",
         "tako_pfp": "IMG_0091 - Wild takodachi.jpeg",
         "twitter": "@Wild Tako",
         "message": "Happy Birthday Ina! I hope you have an amazing birthday! Thank you for being the best Tako for us Takodachis for years and making our days more comfy! Happy birthday Ina!",
-        "illustration": "IMG_0089 - Wild takodachi.jpeg"
+        "illustration": "IMG_0089 - Wild takodachi.jpeg",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 35,
         "discord": "GreenFox#3059",
         "tako_pfp": "Takoverse my tako - H z.png",
         "twitter": "@GreenFox8833",
         "message": "Happy birthday Ina!",
-        "illustration": "happy birthday ina 2023 - H z.png"
+        "illustration": "happy birthday ina 2023 - H z.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 36,
         "discord": "Kurosagi#6680",
         "tako_pfp": "takofrench - Kurosagi x.png",
         "twitter": "@PyroKuro",
         "message": "Started drawing last year because of your stream and i finally got hooked on it and don't plain to let it go yet !\n\nHappy Birthday !!",
-        "illustration": "inabd2023 - Kurosagi x.png"
+        "illustration": "inabd2023 - Kurosagi x.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 37,
         "discord": "Takrux #2708",
         "tako_pfp": "Takoverse - Xarles Cruz.jpg",
         "twitter": "",
         "message": "Greetings and Happy Birthday, Ina!\n\nAnother year, another birthday. With that, I wish you the best of luck and good health this year. You've aged like fine wine, Ina. You've shown lots of improvement in singing, dancing, and of course your drawings.",
-        "illustration": "Ina Sunset - Xarles Cruz.jpg"
+        "illustration": "Ina Sunset - Xarles Cruz.jpg",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 38,
         "discord": "Takrux #2708",
         "tako_pfp": "Takoverse - Xarles Cruz.jpg",
         "twitter": "",
         "message": "Greetings and Happy Birthday, Ina!\n\nAnother year, another birthday. With that, I wish you the best of luck and good health this year. You've aged like fine wine, Ina. You've shown lots of improvement in singing, dancing, and of course your drawings.",
-        "illustration": "Testing - Xarles Cruz.jpg"
+        "illustration": "Testing - Xarles Cruz.jpg",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 39,
         "discord": "teamakite#5686",
         "tako_pfp": "",
         "twitter": "@teamakite",
         "message": "I wish you a Happy Birthday, Ina! Here's to another fun and exciting year with you and tako community. Wish you the very best ^^",
-        "illustration": "Ina BD 2023 - Alexander Niemi.png"
+        "illustration": "Ina BD 2023 - Alexander Niemi.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 40,
         "discord": "Vantablack#4209",
         "tako_pfp": "",
         "twitter": "@V4Vantablack",
         "message": "Another year has passed, it's been a great time working at Tako Eats while part-timing in Ur-So-Banished (USB) department. Happy birthday Ina! Thank you so much for all the puns, wisdoms, comfy and fun streams! Here's to another year full of WAH!!",
-        "illustration": "Ina Birthday 2023 - Jordy Adrianto.png"
+        "illustration": "Ina Birthday 2023 - Jordy Adrianto.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 41,
         "discord": "Kergean#2061",
         "tako_pfp": "1%tako - Kergean.png",
         "twitter": "@JKergean",
         "message": "Happy birthday, Ina! Thank you for everything you've done for us and may you be successful in everything else you plan on doing in the future.",
-        "illustration": "gesture - Kergean.PNG"
+        "illustration": "gesture - Kergean.PNG",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 42,
         "discord": "vignedev#4230",
         "tako_pfp": "TAKO_2K - Vigne Dev.png",
         "twitter": "@vignedev",
         "message": "Happy Birthday Ina! I started watching you roughly 2.5 years ago, and that was when I started uni and now I'm near finishing it, so I want to thank you for keeping my spirits high during all of it and for always having something to look forward to!",
-        "illustration": "vignedev_1080_final_forreal_2 - Vigne Dev.png"
+        "illustration": "vignedev_1080_final_forreal_2 - Vigne Dev.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 43,
         "discord": "Manor#9805",
         "tako_pfp": "manorfasttako - Maciej Chmielewski.png",
         "twitter": "@manorka6",
         "message": "HAPPY BIRTHDAY INA! I wanna say thank you for another amazing year for being my cure for realy bad days, my motivation to continue learnig about art. I wish you only happy days, good health and spending lots of good time with friends and family. WAH!",
-        "illustration": "inaBD2023 - Maciej Chmielewski.jpg"
+        "illustration": "inaBD2023 - Maciej Chmielewski.jpg",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 44,
         "discord": "Ammomagnet#5449",
         "tako_pfp": "Takoverse - Ammomagnet.png",
         "twitter": "@ammomagnet",
         "message": "Happy birthday Ina! Another trip around the sun behind and another one to look forward to! Hope the next one contains many more new and fun experiences for you! And most importantly, I wish you happiness and good health through them all!",
-        "illustration": ""
+        "illustration": "",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 45,
         "discord": "Starry5hark#1470",
         "tako_pfp": "starrytaako - Starry 5hark.png",
         "twitter": "@starry5hark",
         "message": "Wah! Happy birthday Inaaaa!!!! I went back into art mainly because of your gesture drawing streams, I learned a lot with them! It makes me happy to join other takos in this project to show love and appreciation to our favorite priestess!",
-        "illustration": "inapose - Starry 5hark.png"
+        "illustration": "inapose - Starry 5hark.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 46,
         "discord": "PeaceLight #5336",
         "tako_pfp": "Nekodachi - Aaron Wallestad.png",
         "twitter": "@PL_PeaceLight",
         "message": "Happy Birthday, Ina!!! I hope your day is filled with good friends and family. Eat a lot tasty food! ",
-        "illustration": ""
+        "illustration": "",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 47,
         "discord": "Cole_kg5#5227",
         "tako_pfp": "",
         "twitter": "@cole_kg5",
         "message": "HBD! Can't believe it's another year for our priestess! I can't say everything you've done for us in 250 characters but the gist of it is: You're the best, comfiest hooman we could ever wish for. Here's to another year on our quest for world do-!",
-        "illustration": ""
+        "illustration": "",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 48,
         "discord": "Shinjo#7763",
         "tako_pfp": "",
         "twitter": "",
         "message": "Happy birthday Ina! Your talent, humor, and positivity have brought so much joy to your fans around the world. May your special day be filled with love, happiness, and all the things that make you smile. Cheers to another year of greatness!",
-        "illustration": ""
+        "illustration": "",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 49,
         "discord": "Proteus#5191",
         "tako_pfp": "Takodachi Smol - Extraordinaire.png",
         "twitter": "@proteusinanitas",
         "message": "Thanks for doing art ina, I've progressively watched less and less of you(and vtubers in general), but you've always and will always stay in my heart as the one to help me into art.\nYes this is heavily based on the watcher, hopefully that's fine.",
-        "illustration": "The Watcher - Extraordinaire.png"
+        "illustration": "The Watcher - Extraordinaire.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 50,
         "discord": "Chapmanly#4961",
         "tako_pfp": "Neko_Chap_Tako - Chapman Lee.png",
         "twitter": "Artist: @NekoBandito | Concept: @Chapman_ly",
         "message": "Hi Ina! I've really enjoyed seeing you tackle projects since debut. It fires me up to do more projects outside my game dev job, which led to The Ina Festival animatic last year. Hope to make it a series. Cheers to you for inspiring me, wah!",
-        "illustration": "Ina2023Bday_Submit - Chapman Lee.png"
+        "illustration": "Ina2023Bday_Submit - Chapman Lee.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 51,
         "discord": "Sine_Fine_Belli#1998",
         "tako_pfp": "",
         "twitter": "@Sine_Fine_Belli",
         "message": "Happy Birthday Ina! It's been 3 years since your debut. Thank you for everything!",
-        "illustration": "98144C87-374A-4CA2-B5FE-1D4158DE620E - Jimmy Wen.jpeg"
+        "illustration": "98144C87-374A-4CA2-B5FE-1D4158DE620E - Jimmy Wen.jpeg",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 52,
         "discord": "Sine_Fine_Belli#1998",
         "tako_pfp": "",
         "twitter": "@Sine_Fine_Belli",
         "message": "Happy Birthday Ina! It's been 3 years since your debut. Thank you for everything!",
-        "illustration": "2406BB03-C4C9-4C8D-889B-574C808B7C2F - Jimmy Wen.jpeg"
+        "illustration": "2406BB03-C4C9-4C8D-889B-574C808B7C2F - Jimmy Wen.jpeg",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 53,
         "discord": "Ryco-Ri#1590",
         "tako_pfp": "takotakoryco - Rin_ Lazuli.png",
         "twitter": "@Ryco_Ri",
         "message": "HAPPY BIRTHDAY INAA!! I wish you well with your wonderful day!",
-        "illustration": "AHUDHA - Rin_ Lazuli.png"
+        "illustration": "AHUDHA - Rin_ Lazuli.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 54,
         "discord": "SuZu#5529",
         "tako_pfp": "FsZh - SuZuHachi Amane.png",
         "twitter": "@Suzuhachi85",
         "message": "thanks for all.",
-        "illustration": "inaSZH (1) - SuZuHachi Amane.png"
+        "illustration": "inaSZH (1) - SuZuHachi Amane.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 55,
         "discord": "McArkus#9571",
         "tako_pfp": "tako_bday - McArkus.png",
         "twitter": "@mcarkus",
         "message": "Happy birthday Ina, congratulations on 3 years with everyone in the community. I want to wish you a very happy day and give you a big virtual hug. Take care and let's celebrate more birthdays with everyone.",
-        "illustration": ""
+        "illustration": "",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 56,
         "discord": "Jamuko#9385",
         "tako_pfp": "jamuko tako pfp-72dpi - Jamuko.png",
         "twitter": "@Jamutako",
         "message": "Happy bday Ina!!! I always loved your gesture drawing streams, so I'm glad I was able to participate in this project and contribute a pose for drawing! Elegant Inya!! Have a lovely day! ✿",
-        "illustration": "Jamuko-Inapose - Jamuko.png"
+        "illustration": "Jamuko-Inapose - Jamuko.png",
+        "is_3d": false,
+        "model": ""
     },
     {
+        "date": "",
         "index": 57,
         "discord": "Blank Blackwhite#8027",
         "tako_pfp": "tako blackwhite - Blank Blackwhite.png",
         "twitter": "@buranku_bw",
         "message": "Hey Ina, happy birthday! Time sure flies doesnt it? It's been hard lately, but the tentacult and your streams always help me to keep moving, I'll always support you! I hope the best for you and lets keep having fun and comfy times with the tentacult!",
-        "illustration": "Jamuko-Inapose - Jamuko.png"
+        "illustration": "Jamuko-Inapose - Jamuko.png",
+        "is_3d": false,
+        "model": ""
     }]
 }

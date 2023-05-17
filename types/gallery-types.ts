@@ -1,5 +1,6 @@
 export interface ArtSubmission {
-  date: Date,
+  date: string,
+  index: number,
   discord: string,
   twitter?: string,
   message?: string,

@@ -32,41 +32,60 @@ const height = 1024
 const width = 1024
 
 const testViewer = ref<HTMLElement | undefined>(undefined)
-
-const camera = new THREE.PerspectiveCamera( 70, 1, 0.01, 1000 )
-camera.position.z = 1
-
-
 const scene = new THREE.Scene()
 scene.background = new THREE.Color(THREE.Color.NAMES.white)
 
-new RGBELoader().load( '/hdr/museum.hdr', (text) => {
-  text.mapping = THREE.EquirectangularReflectionMapping
-
-  scene.background = text
-  scene.environment = text
-})
-
-const loader = new GLTFLoader()
+const camera = new THREE.PerspectiveCamera( 70, 1, 0.01, 1000 )
+camera.position.set( 7, 3, 7 )
 
 const renderer = new THREE.WebGLRenderer( { antialias: true } )
-//renderer.toneMapping = THREE.ACESFilmicToneMapping
-//renderer.toneMappingExposure = 1
 renderer.outputEncoding = THREE.sRGBEncoding
+renderer.shadowMap.enabled = true
+renderer.shadowMap.type = THREE.PCFSoftShadowMap
+
+const pmremGenerator = new THREE.PMREMGenerator( renderer )
+pmremGenerator.compileEquirectangularShader()
 
 const controls = new OrbitControls( camera, renderer.domElement )
-controls.target = new THREE.Vector3(0,2,0)
-controls.autoRotate = true
 
-camera.position.set(0, 4, 10)
+const hlight = new THREE.AmbientLight( 0x404040, 1 )
+scene.add( hlight )
 
-const light = new THREE.DirectionalLight(0xffffff, 0.5 )
-scene.add(light)
+const directionalLight = new THREE.DirectionalLight( 0xffffff, 1 )
+directionalLight.castShadow = true
+
+directionalLight.shadow.mapSize.width = 2048
+directionalLight.shadow.mapSize.height = 2048
+
+directionalLight.shadow.camera.top = 4
+directionalLight.shadow.camera.bottom = - 4
+directionalLight.shadow.camera.left = - 4
+directionalLight.shadow.camera.right = 4
+directionalLight.shadow.camera.near = 0.1
+directionalLight.shadow.camera.far = 40
+directionalLight.shadow.camera.far = 40
+directionalLight.shadow.bias = - 0.002
+directionalLight.position.set( 0, 20, 20 )
+scene.add( directionalLight )
 
 const testLoad = ref({
   loaded: 0,
   total: 0,
 })
+
+
+const hdrLoader = new RGBELoader()
+hdrLoader.loadAsync( '/hdr/museum.hdr', (progress) => {
+  console.log('hdr progress', progress)
+})
+.then((texture) => {
+		const envMap = pmremGenerator.fromEquirectangular( texture ).texture
+		scene.environment = envMap
+
+    texture.dispose()
+		pmremGenerator.dispose()
+})
+
 
 onMounted(async () => {
   renderer.setSize( width,height )
@@ -74,10 +93,24 @@ onMounted(async () => {
 
   console.log(testViewer.value)
 
+  const loader = new GLTFLoader()
+
   const gltf = await loader.loadAsync(props.model, (progress) => {
     testLoad.value.loaded = progress.loaded
     testLoad.value.total = progress.total
   })
+  gltf.scene.traverse((child) => {
+    console.log(child, child.isObject3D, typeof child)
+    if (child.type == 'Mesh' && child instanceof THREE.Mesh) {
+      child.castShadow = true
+      child.receiveShadow = true
+
+      if (child.material instanceof THREE.MeshStandardMaterial) {
+        child.material.envMapIntensity = 0.5
+      }
+    }
+  })
+
   scene.add(gltf.scene)
 
   if (testViewer.value) {

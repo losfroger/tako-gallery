@@ -107,7 +107,8 @@ const props = defineProps({
     type: Object as PropType<ArtSubmission>,
     required: true,
     default: (): ArtSubmission => ({
-      date: new Date(),
+      index: 0,
+      date: new Date().toISOString(),
       discord: '',
       is_3d: false,
     })

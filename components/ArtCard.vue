@@ -35,6 +35,8 @@
             v-if="tako_pfp_path"
             class="tw-rounded-[100%] tw-bg-white tw-transition-all tw-duration-500"
             format="webp"
+            width="45px"
+            height="45px"
             sizes="sm:32px md:64px"
             :src="tako_pfp_path"
           />

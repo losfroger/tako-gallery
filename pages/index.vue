@@ -1,6 +1,6 @@
 <template>
   <div class="tw-relative tw-flex tw-justify-center">
-    <div class="tw-columns-4 tw-gap-4">
+    <div class="tw-columns-auto tw-gap-4 sm:tw-columns-2 md:tw-columns-3 lg:tw-columns-4 xl:tw-columns-5">
       <template
         v-for="(sub, i) in test"
         :key="i"

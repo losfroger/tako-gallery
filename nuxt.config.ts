@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/image-edge',
     'nuxt-icon',
   ],
+  css: ['@/assets/styles/global.scss'],
   quasar: {
     iconSet: 'mdi-v7',
     extras: {

@@ -22,7 +22,8 @@
     "eslint-plugin-vue": "^9.11.0",
     "nuxt": "^3.4.1",
     "nuxt-icon": "^0.4.0",
-    "nuxt-quasar-ui": "^1.7.0"
+    "nuxt-quasar-ui": "^1.7.0",
+    "sass": "^1.62.1"
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.6.6",

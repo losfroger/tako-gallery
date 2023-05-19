@@ -24,6 +24,13 @@
           class="tw-max-h-[85vh] tw-w-auto tw-max-w-[95vw] tw-rounded-md tw-bg-white tw-object-contain"
           :src="imageUrl"
         >
+        <QBtn
+          class="tw-absolute tw-right-1 tw-top-1 tw-z-50 tw-cursor-pointer tw-text-accent tw-drop-shadow-md"
+          flat
+          round
+          icon="mdi-close"
+          @click="showImageDialog = false"
+        />
       </div>
     </QDialog>
     <QDialog

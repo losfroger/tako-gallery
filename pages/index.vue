@@ -43,6 +43,12 @@
 import { ArtSubmission } from '~/types/gallery-types'
 import submissionJson from './inaBdaySubmissions2023.json'
 
+useHead({
+  title: 'Tako gallery',
+  meta: [
+    { name: 'description', content: 'A wonderful gallery for takos to show their support with messages, illustrations and 3D models!' }
+  ],
+})
 
 const test = ref<(ArtSubmission)[]>(submissionJson.submissions)
 

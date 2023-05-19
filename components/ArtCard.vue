@@ -16,6 +16,7 @@
         />
         <NuxtImg
           :key="`${illustration_path}-big`"
+          loading="lazy"
           fit="contain"
           class="tw-absolute tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-cursor-pointer tw-overflow-clip"
           sizes="lg:320px"

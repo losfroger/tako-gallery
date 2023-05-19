@@ -68,8 +68,14 @@
             </a>
           </div>
         </div>
-        <div class="divider" />
-        <p class="tw-whitespace-pre-line">
+        <div
+          v-if="submission.message"
+          class="divider"
+        />
+        <p
+          v-if="submission.message"
+          class="tw-whitespace-pre-line"
+        >
           {{ submission.message?.trim() }}
         </p>
       </div>

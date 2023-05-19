@@ -6,6 +6,7 @@
         class="illustration-wrapper tw-relative tw-aspect-square tw-w-full tw-overflow-clip"
       >
         <NuxtImg
+          :key="`${illustration_path}-small`"
           fit="cover"
           class="tw-absolute tw-top-0 tw-h-full tw-w-full tw-cursor-pointer tw-overflow-clip tw-blur-lg"
           width="120px"
@@ -14,12 +15,13 @@
           :src="illustration_path"
         />
         <NuxtImg
+          :key="`${illustration_path}-big`"
           fit="contain"
-          class="tw-absolute tw-top-1/2 -tw-translate-y-1/2 tw-cursor-pointer tw-overflow-clip"
+          class="tw-absolute tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-cursor-pointer tw-overflow-clip"
           sizes="lg:320px"
           format="webp"
           :src="illustration_path"
-          @click="showDialog = true"
+          @click="onImageClick"
         />
         <QIcon
           v-if="submission.is_3d"
@@ -34,7 +36,8 @@
           <NuxtImg
             v-if="tako_pfp_path"
             class="tw-rounded-[100%] tw-bg-white tw-transition-all tw-duration-500"
-            format="webp"
+            width="45px"
+            height="45px"
             sizes="sm:32px md:64px"
             :src="tako_pfp_path"
           />
@@ -70,56 +73,42 @@
         </p>
       </div>
     </div>
-    <QDialog
-      v-model="showDialog"
-      maximized
-      @click="showDialog = false"
-    >
-      <div
-        v-if="submission.is_3d"
-        class="3d-viewer tw-flex tw-w-full tw-flex-row tw-items-center tw-justify-center"
-      >
-        <div class="tw-overflow-clip tw-rounded-md tw-bg-white">
-          <ModelViewer
-            :model="model_path"
-            class="tw-aspect-square tw-h-[85vh]"
-          />
-        </div>
-      </div>
-      <div
-        v-else
-        class="2d-viewer tw-flex tw-w-full tw-flex-row tw-items-center tw-justify-center"
-      >
-        <img
-          class="tw-h-[85vh] tw-w-auto tw-rounded-md tw-bg-white"
-          :src="illustration_path"
-        >
-      </div>
-    </QDialog>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ArtSubmission } from '~/types/gallery-types'
 
+const emits = defineEmits<{
+  (e: 'openImageViewer', image_url: string): void,
+  (e: 'openModelViewer', model_url: string): void,
+}>()
+
 const props = defineProps({
   submission: {
     type: Object as PropType<ArtSubmission>,
     required: true,
     default: (): ArtSubmission => ({
-      date: new Date(),
+      index: 0,
+      date: new Date().toISOString(),
       discord: '',
       is_3d: false,
     })
   }
 })
-
-const showDialog = ref(false)
-
 const illustration_path = computed(() => props.submission.illustration ? `/submissions/illustrations/${props.submission.illustration}` : '')
 const tako_pfp_path = computed(() => props.submission.tako_pfp ? `/submissions/pfp/${props.submission.tako_pfp}` : '')
 const model_path = computed(() => props.submission.model ? `/submissions/3d-models/${props.submission.model}` : '')
 const twitter_username = computed(() => props.submission.twitter ? props.submission.twitter?.trim().toLowerCase().replaceAll('@', '').replaceAll(' ', '_') : '')
+
+function onImageClick() {
+  if (props.submission.is_3d) {
+    emits('openModelViewer', model_path.value)
+  } else {
+    console.log('Emit open image')
+    emits('openImageViewer', illustration_path.value)
+  }
+}
 
 </script>
 

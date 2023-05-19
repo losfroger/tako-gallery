@@ -1,14 +1,62 @@
 <template>
-  <div class="tw-relative">
-    <QCircularProgress class="tw-absolute tw-left-1/2 tw-top-1/2" />
-    <div
-      ref="testViewer"
-      class="tw-h-full tw-w-full tw-cursor-all-scroll"
-    />
+  <div class="tw-relative tw-isolate">
+    <Transition
+      enter-active-class="animated fadeIn"
+      leave-active-class="animated fadeOut"
+    >
+      <QCircularProgress
+        v-show="!loading.appended || loadingCalculated.max < 1 || loadingCalculated.progressLoaded != loadingCalculated.max "
+        :max="loadingCalculated.max"
+        :value="loadingCalculated.progressLoaded"
+        :indeterminate="loadingCalculated.max == 0 || loadingCalculated.progressLoaded != loadingCalculated.max"
+        size="100px"
+        color="orange"
+        track-color="grey-3"
+        class="tw-absolute tw-left-1/2 tw-top-1/2 tw-z-50 -tw-translate-x-1/2 -tw-translate-y-1/2"
+      />
+    </Transition>
+    <Transition
+      enter-active-class="animated fadeIn"
+      leave-active-class="animated fadeOut"
+    >
+      <div
+        v-show="loading.appended"
+        ref="testViewer"
+        class="tw-z-0 tw-h-full tw-w-full tw-cursor-all-scroll"
+      />
+    </Transition>
+    <div class="tw-absolute tw-bottom-0 tw-right-0 tw-p-2">
+      <div class="tw-flex tw-flex-row tw-gap-1">
+        <QBtn
+          flat
+          round
+          color="accent"
+        >
+          <Icon
+            name="ph:gear"
+            size="32px"
+            class="tw-drop-shadow"
+          />
+          <QMenu
+            anchor="top middle"
+            self="bottom middle"
+          >
+            <div class="tw-flex tw-flex-col tw-p-4">
+              Hello world!
+            </div>
+          </QMenu>
+        </QBtn>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import * as THREE from 'three'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls'
+import {RGBELoader} from 'three/examples/jsm/loaders/RGBELoader'
+
 
 const props = defineProps({
   model: {
@@ -17,13 +65,6 @@ const props = defineProps({
     default: '/3d-models/coding-frog/model.glb'
   }
 })
-
-import * as THREE from 'three'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls'
-import {RGBELoader} from 'three/examples/jsm/loaders/RGBELoader'
-
-// init
 
 
 console.log('Test')
@@ -68,15 +109,23 @@ directionalLight.shadow.bias = - 0.002
 directionalLight.position.set( 0, 20, 20 )
 scene.add( directionalLight )
 
-const testLoad = ref({
-  loaded: 0,
-  total: 0,
+const loading = ref({
+  hdrLoaded: 0,
+  hdrTotal: 0,
+  glbLoaded: 0,
+  glbTotal: 0,
+  appended: false,
 })
 
+const loadingCalculated = computed(() => ({
+  max: loading.value.hdrTotal + loading.value.glbTotal,
+  progressLoaded: loading.value.hdrLoaded + loading.value.glbLoaded,
+}))
 
 const hdrLoader = new RGBELoader()
-hdrLoader.loadAsync( '/hdr/museum.hdr', (progress) => {
-  console.log('hdr progress', progress)
+hdrLoader.loadAsync( '/hdr/env.hdr', (progress) => {
+  loading.value.hdrLoaded = progress.loaded
+  loading.value.hdrTotal = progress.total
 })
 .then((texture) => {
 		const envMap = pmremGenerator.fromEquirectangular( texture ).texture
@@ -96,8 +145,8 @@ onMounted(async () => {
   const loader = new GLTFLoader()
 
   const gltf = await loader.loadAsync(props.model, (progress) => {
-    testLoad.value.loaded = progress.loaded
-    testLoad.value.total = progress.total
+    loading.value.glbLoaded = progress.loaded
+    loading.value.glbTotal = progress.total
   })
   gltf.scene.traverse((child) => {
     console.log(child, child.isObject3D, typeof child)
@@ -106,7 +155,7 @@ onMounted(async () => {
       child.receiveShadow = true
 
       if (child.material instanceof THREE.MeshStandardMaterial) {
-        child.material.envMapIntensity = 0.5
+        child.material.envMapIntensity = 0.3
       }
     }
   })
@@ -117,6 +166,8 @@ onMounted(async () => {
     console.log('Test appending')
     const canvas = testViewer.value.appendChild(renderer.domElement )
     canvas.className = 'threejs-canvas'
+
+    loading.value.appended = true
   }
 })
 

@@ -13,11 +13,15 @@
     <QDialog
       v-model="showImageDialog"
       maximized
+      auto-close
+      class="tw-relative"
+      transition-show="fade"
+      transition-hide="fade"
       @click="showImageDialog = false"
     >
-      <div class="2d-viewer tw-flex tw-w-full tw-flex-row tw-items-center tw-justify-center">
+      <div class="tw-relative tw-flex tw-w-full tw-flex-row tw-items-center tw-justify-center">
         <img
-          class="tw-h-[85vh] tw-w-auto tw-rounded-md tw-bg-white"
+          class="tw-max-h-[85vh] tw-w-auto tw-max-w-[95vw] tw-rounded-md tw-bg-white tw-object-contain"
           :src="imageUrl"
         >
       </div>

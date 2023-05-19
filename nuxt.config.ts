@@ -12,6 +12,7 @@ export default defineNuxtConfig({
   quasar: {
     iconSet: 'mdi-v7',
     extras: {
+      animations: 'all',
       fontIcons: ['mdi-v7']
     },
     config: {

@@ -19,7 +19,7 @@
           sizes="lg:320px"
           format="webp"
           :src="illustration_path"
-          @click="showDialog = true"
+          @click="onImageClick"
         />
         <QIcon
           v-if="submission.is_3d"
@@ -34,11 +34,10 @@
           <NuxtImg
             v-if="tako_pfp_path"
             class="tw-rounded-[100%] tw-bg-white tw-transition-all tw-duration-500"
-            format="webp"
             width="45px"
             height="45px"
             sizes="sm:32px md:64px"
-            :src="tako_pfp_path"
+            :src="`/pfp/${props.submission.tako_pfp}`"
           />
           <Icon
             v-else
@@ -72,37 +71,16 @@
         </p>
       </div>
     </div>
-    <QDialog
-      v-model="showDialog"
-      maximized
-      @click="showDialog = false"
-    >
-      <div
-        v-if="submission.is_3d"
-        class="3d-viewer tw-flex tw-w-full tw-flex-row tw-items-center tw-justify-center"
-      >
-        <div class="tw-overflow-clip tw-rounded-md tw-bg-white">
-          <ModelViewer
-            :model="model_path"
-            class="tw-aspect-square tw-h-[85vh]"
-          />
-        </div>
-      </div>
-      <div
-        v-else
-        class="2d-viewer tw-flex tw-w-full tw-flex-row tw-items-center tw-justify-center"
-      >
-        <img
-          class="tw-h-[85vh] tw-w-auto tw-rounded-md tw-bg-white"
-          :src="illustration_path"
-        >
-      </div>
-    </QDialog>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ArtSubmission } from '~/types/gallery-types'
+
+const emits = defineEmits<{
+  (e: 'openImageViewer', image_url: string): void,
+  (e: 'openModelViewer', model_url: string): void,
+}>()
 
 const props = defineProps({
   submission: {
@@ -116,13 +94,19 @@ const props = defineProps({
     })
   }
 })
-
-const showDialog = ref(false)
-
 const illustration_path = computed(() => props.submission.illustration ? `/submissions/illustrations/${props.submission.illustration}` : '')
 const tako_pfp_path = computed(() => props.submission.tako_pfp ? `/submissions/pfp/${props.submission.tako_pfp}` : '')
 const model_path = computed(() => props.submission.model ? `/submissions/3d-models/${props.submission.model}` : '')
 const twitter_username = computed(() => props.submission.twitter ? props.submission.twitter?.trim().toLowerCase().replaceAll('@', '').replaceAll(' ', '_') : '')
+
+function onImageClick() {
+  if (props.submission.is_3d) {
+    emits('openModelViewer', model_path.value)
+  } else {
+    console.log('Emit open image')
+    emits('openImageViewer', illustration_path.value)
+  }
+}
 
 </script>
 

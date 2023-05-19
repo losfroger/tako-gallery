@@ -6,6 +6,7 @@
         class="illustration-wrapper tw-relative tw-aspect-square tw-w-full tw-overflow-clip"
       >
         <NuxtImg
+          :key="`${illustration_path}-small`"
           fit="cover"
           class="tw-absolute tw-top-0 tw-h-full tw-w-full tw-cursor-pointer tw-overflow-clip tw-blur-lg"
           width="120px"
@@ -14,6 +15,7 @@
           :src="illustration_path"
         />
         <NuxtImg
+          :key="`${illustration_path}-big`"
           fit="contain"
           class="tw-absolute tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-cursor-pointer tw-overflow-clip"
           sizes="lg:320px"
@@ -37,7 +39,7 @@
             width="45px"
             height="45px"
             sizes="sm:32px md:64px"
-            :src="`/pfp/${props.submission.tako_pfp}`"
+            :src="tako_pfp_path"
           />
           <Icon
             v-else

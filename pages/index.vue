@@ -144,8 +144,8 @@ async function openModelDialog(url: string) {
   showModelDialog.value = true
 }
 
-const audio = new Audio('/ina-wah.mp3')
 function takoWah() {
+  const audio = new Audio('/ina-wah.mp3')
   audio.volume = 0.2
   audio.play()
 }

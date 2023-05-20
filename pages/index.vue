@@ -1,6 +1,6 @@
 <template>
   <div class="tw-relative tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-12">
-    <div class="tw-relative tw-isolate tw-mt-40 tw-w-full tw-max-w-4xl">
+    <div class="tw-relative tw-isolate tw-mt-48 tw-w-full tw-max-w-5xl">
       <img
         class="tw-absolute tw-left-1/2 tw-top-0 -tw-z-50 tw-w-1/2 tw-min-w-[350px] -tw-translate-x-1/2 -tw-translate-y-3/4"
         src="/ina_reading.webp"
@@ -19,22 +19,16 @@
         </QInput>
         <div class="tw-flex tw-flex-row tw-flex-wrap">
           <QToggle
-            v-model="filters.show3D"
+            v-model="filters.showNonGesture"
             color="accent"
             keep-color
-            label="Show 3D submissions"
+            label="Show non gesture submissions"
           />
           <QToggle
-            v-model="filters.showFullBody"
+            v-model="filters.showTextOnly"
             color="accent"
             keep-color
-            label="Show full body submissions"
-          />
-          <QToggle
-            v-model="filters.showGesture"
-            color="accent"
-            keep-color
-            label="Show gesture submissions"
+            label="Show text only submissions"
           />
         </div>
       </div>
@@ -108,9 +102,8 @@ useHead({
 
 const filters = ref({
   search: '',
-  show3D: true,
-  showGesture: true,
-  showFullBody: true,
+  showNonGesture: true,
+  showTextOnly: true,
 })
 
 const submissions = ref<(ArtSubmission)[]>(submissionJson.submissions)
@@ -120,9 +113,13 @@ const filteredSubmissions = computed(() => submissions.value.filter((submission)
     submission.discord.trim().toLowerCase().includes(filters.value.search) ||
     submission?.twitter?.trim()?.toLowerCase()?.includes(filters.value.search)
 
-  const threeD = filters.value.show3D ? true : submission.is_3d == false
+  const nonGesture = filters.value.showNonGesture ? true : submission.meta != ''
 
-  return filterNames && threeD
+  const textOnly = filters.value.showTextOnly ? true : submission.illustration != ''
+
+  return filterNames
+    && nonGesture
+    && textOnly
 }))
 
 const showImageDialog = ref(false)

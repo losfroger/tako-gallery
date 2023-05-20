@@ -1,11 +1,12 @@
 <template>
   <div class="tw-relative tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-12">
     <div class="tw-relative tw-isolate tw-mt-48 tw-w-full tw-max-w-5xl">
-      <img
-        class="tw-absolute tw-left-1/2 tw-top-0 -tw-z-50 tw-w-1/2 tw-min-w-[350px] -tw-translate-x-1/2 -tw-translate-y-3/4"
-        src="/ina_reading.webp"
+      <NuxtImg
+        class="tw-absolute tw-left-1/2 tw-top-0 -tw-z-50 tw-w-1/2 tw-min-w-[180px] tw-max-w-[280px] -tw-translate-x-1/2 -tw-translate-y-3/4"
+        src="/ina_reading.png"
+        format="webp"
         alt=""
-      >
+      />
       <div class="tw-flex tw-w-full tw-flex-col tw-gap-2 tw-rounded-xl tw-bg-white tw-p-4 tw-shadow-md">
         <QInput
           v-model="filters.search"

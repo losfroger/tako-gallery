@@ -54,20 +54,26 @@
             <h1 class="tw-my-0 tw-text-lg">
               {{ submission.discord }}
             </h1>
-            <a
+            <div
               v-if="submission.twitter"
-              class="tw-flex tw-items-center tw-gap-1 tw-text-sm tw-text-accent tw-no-underline tw-transition-colors hover:tw-text-primary"
+              class="tw-flex tw-flex-col"
+            >
+              <a
+                v-for="(username, idx) in submission.twitter.split(',')"
+                :key="idx"
+                class="tw-flex tw-items-center tw-gap-1 tw-text-sm"
               target="_blank"
               rel="noopener noreferrer"
-              :href="`https://twitter.com/${twitter_username}`"
+                :href="`https://twitter.com/${username}`"
             >
               <Icon name="ph:twitter-logo" />
               <h2
                 class="tw-my-0 tw-text-sm"
               >
-                {{ twitter_username }}
+                  {{ username }}
               </h2>
             </a>
+            </div>
           </div>
         </div>
         <div

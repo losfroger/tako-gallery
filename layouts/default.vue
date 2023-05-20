@@ -68,11 +68,48 @@
         <NuxtImg
           src="/Credits.png"
           height="100px"
+          class="tw-cursor-pointer"
+          @click="showCreditsDialog = true"
         />
       </div>
     </footer>
+    <QDialog
+      v-model="showCreditsDialog"
+      transition-show="fade"
+      transition-hide="fade"
+    >
+      <QCard>
+        <QCardSection>
+          <div class="text-h6">
+            Credits
+          </div>
+        </QCardSection>
+        <QCardSection class="tw-flex tw-flex-col">
+          <p>
+            This website was made by the Ninomae Ina'nis Discord fan server. Thanks everyone for sending such amazing submissions!
+          </p>
+          <p>
+            Website developed by:
+          </p>
+          <ul class="tw-mt-0 tw-pl-6">
+            <li>1st_Killer: Planning, General contribution</li>
+            <li>Losfroger: Developer, design</li>
+          </ul>
+          <QImg
+            src="/wah.png"
+            class="tw-mx-auto tw-mt-8 tw-max-w-[200px]"
+          />
+        </QCardSection>
+      </QCard>
+    </QDialog>
   </QLayout>
 </template>
+
+<script setup lang="ts">
+
+const showCreditsDialog = ref(false)
+
+</script>
 
 <style scoped lang="scss">
 

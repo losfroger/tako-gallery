@@ -548,8 +548,8 @@
             "twitter": "@vignedev",
             "message": "Happy Birthday Ina! I started watching you roughly 2.5 years ago, and that was when I started uni and now I'm near finishing it, so I want to thank you for keeping my spirits high during all of it and for always having something to look forward to!",
             "illustration": "vignedev_render_frfr.png",
-            "is_3d": false,
-            "model": "",
+            "is_3d": true,
+            "model": "vignedev_final_frfr.glb",
             "meta": "fullbody"
         },
         {
@@ -560,8 +560,8 @@
             "twitter": "@zogajah",
             "message": "Happy Birthday Ina! May you receive lots of well wishes, love and food on this special day. As a GESTURE of goodwill may these gesture poses serve you and takos well into the future.",
             "illustration": "InaBday_render_Zogajah.jpg",
-            "is_3d": false,
-            "model": "",
+            "is_3d": true,
+            "model": "InaBday_Zogajah.glb",
             "meta": "fullbody"
         },
         {
@@ -812,8 +812,8 @@
             "twitter": "@sSt3ll4a",
             "message": "Happy Birthday Ina! Wish you the best today and years beyond! Can't believe it's been over 2 years now, Been amazing to watch you grow and I'm eagerly looking forward to seeing what fun and joy things you will accomplish! Here cheers to another banger of a year!",
             "illustration": "SwoleDachi.png",
-            "is_3d": false,
-            "model": "",
+            "is_3d": true,
+            "model": "SwoleDachi.gltf",
             "meta": "fullbody"
         },
         {
@@ -871,7 +871,7 @@
             "tako_pfp": "Takodachi(beanie)-GuyLastName.png",
             "twitter": "@GuyWhoCantDraww",
             "message": "",
-            "illustration": "TakoGesture-GuyLastName.png",
+            "illustration": "TakoGestureGuyLastName.png",
             "is_3d": false,
             "model": "",
             "meta": "fullbody"
@@ -1010,11 +1010,11 @@
         },
         {
             "date": "5/19/2023 22:22:22",
-            "index": 86,
+            "index": 85,
             "discord": "1st_Killer#2222",
             "tako_pfp": "WololoTako.png",
             "twitter": "@wololoSensei",
-            "message": "is this updating?",
+            "message": "is this updating? round 2",
             "illustration": "",
             "is_3d": false,
             "model": "",

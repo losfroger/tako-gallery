@@ -41,7 +41,7 @@
     </div>
     <div class="tw-columns-auto tw-gap-4 sm:tw-columns-2 md:tw-columns-3 lg:tw-columns-4 xl:tw-columns-5">
       <ArtCard
-        v-for="(sub, i) in submissions"
+        v-for="(sub, i) in filteredSubmissions"
         :key="i"
         class="tw-mb-4 tw-break-inside-avoid"
         :submission="sub"
@@ -113,6 +113,16 @@ const filters = ref({
 })
 
 const submissions = ref<(ArtSubmission)[]>(submissionJson.submissions)
+
+const filteredSubmissions = computed(() => submissions.value.filter((submission) => {
+  const filterNames = !filters.value.search ||
+    submission.discord.trim().toLowerCase().includes(filters.value.search) ||
+    submission?.twitter?.trim()?.toLowerCase()?.includes(filters.value.search)
+
+  const threeD = filters.value.show3D ? true : submission.is_3d == false
+
+  return filterNames && threeD
+}))
 
 const showImageDialog = ref(false)
 const imageUrl = ref('')

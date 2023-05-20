@@ -93,7 +93,7 @@
           </p>
           <ul class="tw-mt-0 tw-pl-6">
             <li>1st_Killer: Planning, General contribution</li>
-            <li>Losfroger: Developer, design</li>
+            <li>Losfroger: Developer, Design</li>
           </ul>
           <QImg
             src="/wah.png"

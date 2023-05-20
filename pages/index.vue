@@ -41,7 +41,7 @@
     </div>
     <div class="tw-columns-auto tw-gap-4 sm:tw-columns-2 md:tw-columns-3 lg:tw-columns-4 xl:tw-columns-5">
       <ArtCard
-        v-for="(sub, i) in test"
+        v-for="(sub, i) in submissions"
         :key="i"
         class="tw-mb-4 tw-break-inside-avoid"
         :submission="sub"
@@ -112,7 +112,7 @@ const filters = ref({
   showFullBody: true,
 })
 
-const test = ref<(ArtSubmission)[]>(submissionJson.submissions)
+const submissions = ref<(ArtSubmission)[]>(submissionJson.submissions)
 
 const showImageDialog = ref(false)
 const imageUrl = ref('')

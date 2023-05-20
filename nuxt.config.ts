@@ -29,6 +29,7 @@ export default defineNuxtConfig({
     }
   },
   image: {
+    provider: 'ipx',
     screens: {
       'xs': '0px',
       'sm': '600px',

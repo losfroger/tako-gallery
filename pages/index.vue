@@ -17,7 +17,6 @@
       class="tw-relative"
       transition-show="fade"
       transition-hide="fade"
-      @click="showImageDialog = false"
     >
       <div class="tw-relative tw-flex tw-w-full tw-flex-row tw-items-center tw-justify-center">
         <img

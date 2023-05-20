@@ -622,7 +622,7 @@
         "tako_pfp": "Takoverse_pfp-SmugGoht.jpg",
         "twitter": "@Portr8tPenguin",
         "message": "Happy Birthday Ina!!! I'm sorry about the takodachis stealing your cookie cake.",
-        "illustration": "Ina's_Bday23_FIN-SmugGoht.jpg",
+        "illustration": "Ina_s_Bday23_FIN-SmugGoht.jpg",
         "is_3d": false,
         "model": ""
     },
@@ -854,6 +854,17 @@
         "twitter": "",
         "message": "Hi, Ina! Happy birthday! Thank you for the fun and comfy streams. They really brighten my day. Good luck on your future streams!",
         "illustration": "inapose1-BasdeBruin.png",
+        "is_3d": false,
+        "model": ""
+    },
+    {
+        "date": "5/19/2023 20:32:24",
+        "index": 79,
+        "discord": "CinnaMoonFang#1345",
+        "tako_pfp": "",
+        "twitter": "@CinnaMoonFang",
+        "message": "",
+        "illustration": "Ninomae_Inanis-CinnaMoonFang.png",
         "is_3d": false,
         "model": ""
     }]

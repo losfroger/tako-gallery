@@ -24,13 +24,41 @@
           :src="illustration_path"
           @click="onImageClick"
         />
-        <QIcon
-          v-if="submission.is_3d"
-          class="tw-absolute tw-bottom-2 tw-left-2 tw-ml-auto tw-drop-shadow-md"
-          size="sm"
-          color="cyan-12"
-          name="mdi-cube-outline"
-        />
+        <div class="tw-absolute tw-bottom-2 tw-left-2 tw-flex tw-flex-row tw-gap-1 tw-text-cyan-500">
+          <div
+            v-if="submission.is_3d"
+            title="3D Model"
+          >
+            <Icon
+              class="tw-drop-shadow-md"
+              size="24px"
+              name="ph:cube-duotone"
+            />
+            <QTooltip>3D Model</QTooltip>
+          </div>
+          <div
+            v-if="submission.meta == 'fullbody'"
+            title="Fullbody"
+          >
+            <Icon
+              class="tw-drop-shadow-md"
+              size="24px"
+              name="ic:round-emoji-people"
+            />
+            <QTooltip>Fullbody</QTooltip>
+          </div>
+          <div
+            v-if="submission.meta == 'gesture'"
+            title="Gesture"
+          >
+            <Icon
+              class="tw-drop-shadow-md"
+              size="24px"
+              name="ic:round-sports-martial-arts"
+            />
+            <QTooltip>Gesture pose</QTooltip>
+          </div>
+        </div>
       </div>
       <div class="tw-flex tw-flex-col tw-gap-2 tw-p-2">
         <div class="tw-flex tw-flex-row tw-items-center tw-gap-2">
@@ -62,17 +90,17 @@
                 v-for="(username, idx) in submission.twitter.split(',')"
                 :key="idx"
                 class="tw-flex tw-items-center tw-gap-1 tw-text-sm"
-              target="_blank"
-              rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 :href="`https://twitter.com/${username}`"
-            >
-              <Icon name="ph:twitter-logo" />
-              <h2
-                class="tw-my-0 tw-text-sm"
               >
+                <Icon name="ph:twitter-logo" />
+                <h2
+                  class="tw-my-0 tw-text-sm"
+                >
                   {{ username }}
-              </h2>
-            </a>
+                </h2>
+              </a>
             </div>
           </div>
         </div>

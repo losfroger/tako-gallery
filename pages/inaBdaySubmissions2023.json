@@ -983,10 +983,21 @@
             "is_3d": false,
             "model": "",
             "meta": "gesture"
+        },        {
+            "date": "5/19/2023 21:33:44",
+            "index": 83,
+            "discord": "Ithius#0347",
+            "tako_pfp": "",
+            "twitter": "@Ithius2",
+            "message": "",
+            "illustration": "HBD2023-Ithius.png",
+            "is_3d": false,
+            "model": "",
+            "meta": "gesture"
         },
         {
             "date": "5/19/2023 22:22:22",
-            "index": 83,
+            "index": 84,
             "discord": "1st_Killer#2222",
             "tako_pfp": "WololoTako.png",
             "twitter": "@wololoSensei",
@@ -998,7 +1009,7 @@
         },
         {
             "date": "5/19/2023 23:55:00",
-            "index": 84,
+            "index": 85,
             "discord": "losfroger#8927",
             "tako_pfp": "",
             "twitter": "@losfroger",

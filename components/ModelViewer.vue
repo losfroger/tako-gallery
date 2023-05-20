@@ -1,30 +1,15 @@
 <template>
-  <div class="tw-relative tw-isolate">
-    <Transition
-      enter-active-class="animated fadeIn"
-      leave-active-class="animated fadeOut"
-    >
-      <QCircularProgress
-        v-show="!loading.appended || loadingCalculated.max < 1 || loadingCalculated.progressLoaded != loadingCalculated.max "
-        :max="loadingCalculated.max"
-        :value="loadingCalculated.progressLoaded"
-        :indeterminate="loadingCalculated.max == 0 || loadingCalculated.progressLoaded != loadingCalculated.max"
-        size="100px"
-        color="orange"
-        track-color="grey-3"
-        class="tw-absolute tw-left-1/2 tw-top-1/2 tw-z-50 -tw-translate-x-1/2 -tw-translate-y-1/2"
+  <div class="tw-relative tw-isolate tw-block tw-aspect-square tw-overflow-clip tw-rounded-md tw-bg-white">
+    <QInnerLoading :showing="!loading.appended">
+      <QSpinnerTail
+        color="primary"
+        size="xl"
       />
-    </Transition>
-    <Transition
-      enter-active-class="animated fadeIn"
-      leave-active-class="animated fadeOut"
-    >
-      <div
-        v-show="loading.appended"
-        ref="testViewer"
-        class="tw-z-0 tw-h-full tw-w-full tw-cursor-all-scroll"
-      />
-    </Transition>
+    </QInnerLoading>
+    <div
+      ref="testViewer"
+      class="tw-z-0 tw-h-full tw-w-full tw-cursor-all-scroll"
+    />
     <div class="tw-absolute tw-bottom-0 tw-right-0 tw-p-2">
       <div class="tw-flex tw-flex-row tw-gap-1">
         <QBtn

@@ -35,15 +35,21 @@
     <QDialog
       v-model="showModelDialog"
       maximized
-      @click="showModelDialog = false"
+      transition-show="fade"
+      transition-hide="fade"
     >
-      <div class="3d-viewer tw-flex tw-w-full tw-flex-row tw-items-center tw-justify-center">
-        <div class="tw-overflow-clip tw-rounded-md tw-bg-white">
-          <ModelViewer
-            :model="modelUrl"
-            class="tw-aspect-square tw-h-[85vh]"
-          />
-        </div>
+      <div class="tw-relative">
+        <ModelViewer
+          class="tw-absolute tw-left-1/2 tw-top-1/2 tw-aspect-square tw-max-h-[85vh] tw-max-w-[95vw] -tw-translate-x-1/2 -tw-translate-y-1/2"
+          :model="modelUrl"
+        />
+        <QBtn
+          class="tw-absolute tw-right-1 tw-top-1 tw-z-50 tw-cursor-pointer tw-text-accent tw-drop-shadow-md"
+          flat
+          round
+          icon="mdi-close"
+          @click="showModelDialog = false"
+        />
       </div>
     </QDialog>
   </div>

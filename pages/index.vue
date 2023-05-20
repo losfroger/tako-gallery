@@ -47,6 +47,7 @@
         :submission="sub"
         @open-image-viewer="openImageDialog"
         @open-model-viewer="openModelDialog"
+        @clicked-tako="takoWah"
       />
     </div>
     <QDialog
@@ -144,6 +145,12 @@ async function openModelDialog(url: string) {
 
   await new Promise(r => setTimeout(r, 100))
   showModelDialog.value = true
+}
+
+const audio = new Audio('/ina-wah.mp3')
+function takoWah() {
+  audio.volume = 0.2
+  audio.play()
 }
 
 </script>

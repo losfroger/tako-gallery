@@ -36,11 +36,13 @@
         <div class="tw-flex tw-flex-row tw-items-center tw-gap-2">
           <NuxtImg
             v-if="tako_pfp_path"
-            class="tw-rounded-[100%] tw-bg-white tw-transition-all tw-duration-500"
+            class="tw-cursor-pointer tw-rounded-[100%] tw-bg-white tw-transition-all tw-duration-500"
             width="45px"
             height="45px"
             sizes="sm:32px md:64px"
             :src="tako_pfp_path"
+            :title="`${submission.discord}'s wah`"
+            @click="emits('clickedTako')"
           />
           <Icon
             v-else
@@ -89,6 +91,7 @@ import { ArtSubmission } from '~/types/gallery-types'
 const emits = defineEmits<{
   (e: 'openImageViewer', image_url: string): void,
   (e: 'openModelViewer', model_url: string): void,
+  (e: 'clickedTako'): void,
 }>()
 
 const props = defineProps({

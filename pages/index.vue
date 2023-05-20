@@ -1,5 +1,44 @@
 <template>
-  <div class="tw-relative tw-flex tw-justify-center">
+  <div class="tw-relative tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-12">
+    <div class="tw-relative tw-isolate tw-mt-40 tw-w-full tw-max-w-4xl">
+      <img
+        class="tw-absolute tw-left-1/2 tw-top-0 -tw-z-50 tw-w-1/2 tw-min-w-[350px] -tw-translate-x-1/2 -tw-translate-y-3/4"
+        src="/ina_reading.webp"
+        alt=""
+      >
+      <div class="tw-flex tw-w-full tw-flex-col tw-gap-2 tw-rounded-xl tw-bg-white tw-p-4 tw-shadow-md">
+        <QInput
+          v-model="filters.search"
+          filled
+          clearable
+          label="Search"
+        >
+          <template #prepend>
+            <Icon name="ph:magnifying-glass-duotone" />
+          </template>
+        </QInput>
+        <div class="tw-flex tw-flex-row tw-flex-wrap">
+          <QToggle
+            v-model="filters.show3D"
+            color="accent"
+            keep-color
+            label="Show 3D submissions"
+          />
+          <QToggle
+            v-model="filters.showFullBody"
+            color="accent"
+            keep-color
+            label="Show full body submissions"
+          />
+          <QToggle
+            v-model="filters.showGesture"
+            color="accent"
+            keep-color
+            label="Show gesture submissions"
+          />
+        </div>
+      </div>
+    </div>
     <div class="tw-columns-auto tw-gap-4 sm:tw-columns-2 md:tw-columns-3 lg:tw-columns-4 xl:tw-columns-5">
       <ArtCard
         v-for="(sub, i) in test"
@@ -64,6 +103,13 @@ useHead({
   meta: [
     { name: 'description', content: 'A wonderful gallery for takos to show their support with messages, illustrations and 3D models!' }
   ],
+})
+
+const filters = ref({
+  search: '',
+  show3D: true,
+  showGesture: true,
+  showFullBody: true,
 })
 
 const test = ref<(ArtSubmission)[]>(submissionJson.submissions)

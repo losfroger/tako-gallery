@@ -10,29 +10,6 @@
       ref="testViewer"
       class="tw-z-0 tw-h-full tw-w-full tw-cursor-all-scroll"
     />
-    <div class="tw-absolute tw-bottom-0 tw-right-0 tw-p-2">
-      <div class="tw-flex tw-flex-row tw-gap-1">
-        <QBtn
-          flat
-          round
-          color="accent"
-        >
-          <Icon
-            name="ph:gear"
-            size="32px"
-            class="tw-drop-shadow"
-          />
-          <QMenu
-            anchor="top middle"
-            self="bottom middle"
-          >
-            <div class="tw-flex tw-flex-col tw-p-4">
-              Hello world!
-            </div>
-          </QMenu>
-        </QBtn>
-      </div>
-    </div>
   </div>
 </template>
 

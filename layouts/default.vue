@@ -40,11 +40,16 @@
     <footer
       class="tw-relative tw-mt-20 tw-bg-gradient-to-b tw-from-[#ffbb48] tw-from-5% tw-via-accent tw-via-60% tw-to-[#d67d24] tw-p-6 tw-text-tertiary tw-shadow-2xl"
     >
-      <NuxtImg
-        src="/AOPatternFilledIn.png"
-        class="tw-absolute -tw-top-[82px] tw-left-1/2 -tw-translate-x-1/2 tw-drop-shadow-sm"
-        width="90px"
-      />
+      <RouterLink
+        to="/ao-chan"
+        class="tw-absolute -tw-top-[82px] tw-left-1/2 -tw-translate-x-1/2"
+      >
+        <NuxtImg
+          src="/AOPatternFilledIn.png"
+          class="tw-cursor-pointer tw-drop-shadow-sm hover:tw-animate-pulse"
+          width="90px"
+        />
+      </RouterLink>
       <div class="tw-mt-4 tw-flex tw-flex-col tw-items-center tw-gap-2 md:tw-flex-row">
         <ul class="social-media-links tw-list-none tw-text-lg">
           <li>

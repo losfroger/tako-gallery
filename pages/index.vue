@@ -110,9 +110,9 @@ const filters = ref({
 const submissions = ref<(ArtSubmission)[]>(submissionJson.submissions)
 
 const filteredSubmissions = computed(() => submissions.value.filter((submission) => {
-  const filterNames = !filters.value.search ||
-    submission.discord.trim().toLowerCase().includes(filters.value.search) ||
-    submission?.twitter?.trim()?.toLowerCase()?.includes(filters.value.search)
+  const filterNames = !filters.value.search
+    || submission.discord.trim().toLowerCase().includes(filters.value?.search.trim().toLowerCase())
+    || submission?.twitter?.trim()?.toLowerCase()?.includes(filters.value?.search.trim().toLowerCase())
 
   const nonGesture = filters.value.showNonGesture ? true : submission.meta != ''
 

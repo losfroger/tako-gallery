@@ -1,23 +1,28 @@
 <template>
   <QLayout view="hHh lpR fFf">
     <QHeader
-      reveal
       elevated
       class="bg-primary text-white"
     >
       <QToolbar>
         <QToolbarTitle class="tw-flex tw-flex-row tw-items-center tw-gap-4">
-          <img
-            src="/takoicon.png"
-            class="tw-mb-1 tw-w-9 tw-object-contain"
-          >
+          <RouterLink to="/">
+            <img
+              src="/takoicon.png"
+              class="tw-mt-1 tw-w-9 tw-object-contain"
+              title="Home"
+            >
+          </RouterLink>
           Tako Gallery
         </QToolbarTitle>
       </QToolbar>
     </QHeader>
 
     <QPageContainer>
-      <QPage padding>
+      <QPage
+        padding
+        class="tw-min-h-[85vh]"
+      >
         <slot />
       </QPage>
     </QPageContainer>
@@ -103,13 +108,39 @@
             Website developed by:
           </p>
           <ul class="tw-mt-0 tw-pl-6">
-            <li>1st_Killer: Planning, General contribution</li>
-            <li>Losfroger: Developer, Design</li>
+            <li>
+              <div class="tw-flex tw-items-center">
+                <a
+                  href="https://twitter.com/WololoSensei"
+                  class="tw-inline-flex tw-items-center tw-gap-1"
+                >
+                  <Icon name="ph:twitter-logo" /> 1st_Killer
+                </a>:
+                Planning, General contribution
+              </div>
+            </li>
+            <li>
+              <div class="tw-flex tw-items-center">
+                <a
+                  href="https://twitter.com/losfroger"
+                  class="tw-inline-flex tw-items-center tw-gap-1"
+                >
+                  <Icon name="ph:twitter-logo" /> Losfroger
+                </a>:
+                Developer, Design
+              </div>
+            </li>
           </ul>
-          <QImg
-            src="/wah.png"
+          <RouterLink
+            to="/lagtrain"
             class="tw-mx-auto tw-mt-8 tw-max-w-[200px]"
-          />
+          >
+            <img
+              src="/wah.png"
+              class="tw-w-full"
+              title="Lagtrain?"
+            >
+          </RouterLink>
         </QCardSection>
       </QCard>
     </QDialog>
@@ -128,4 +159,10 @@ const showCreditsDialog = ref(false)
   @apply tw-flex tw-flex-row tw-items-center tw-gap-1 tw-no-underline tw-text-tertiary hover:tw-text-primary tw-transition-colors;
 }
 
+</style>
+
+<style>
+a {
+  @apply tw-text-accent tw-no-underline tw-transition-colors hover:tw-text-primary ;
+}
 </style>

@@ -8,4 +8,5 @@ export interface ArtSubmission {
   illustration?: string,
   is_3d: boolean,
   model?: string,
+  meta?: 'gesture' | 'fullbody',
 }

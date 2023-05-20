@@ -21,6 +21,17 @@
         <slot />
       </QPage>
     </QPageContainer>
+    <Transition
+      enter-active-class="animated fadeIn"
+      leave-active-class="animated fadeOut"
+    >
+      <ShowOnScroll
+        :show-after-px="160"
+        class="tw-fixed tw-bottom-4 tw-right-4"
+      >
+        <ScrollToTopBtn />
+      </ShowOnScroll>
+    </Transition>
     <footer
       class="tw-relative tw-mt-20 tw-bg-gradient-to-b tw-from-[#ffbb48] tw-from-5% tw-via-accent tw-via-60% tw-to-[#d67d24] tw-p-6 tw-text-tertiary tw-shadow-2xl"
     >

@@ -1009,8 +1009,20 @@
             "meta": "fullbody"
         },
         {
-            "date": "5/19/2023 22:22:22",
+            "date": "5/21/2023 12:23:00",
             "index": 85,
+            "discord": "刀子貓#4528",
+            "tako_pfp": "",
+            "twitter": "@KnifeCat_tw",
+            "message": "",
+            "illustration": "KnifeCatTw-Submission.jpg",
+            "is_3d": false,
+            "model": "",
+            "meta": "fullbody"
+        },
+        {
+            "date": "5/19/2023 22:22:22",
+            "index": 86,
             "discord": "1st_Killer#2222",
             "tako_pfp": "WololoTako.png",
             "twitter": "@wololoSensei",
@@ -1022,7 +1034,7 @@
         },
         {
             "date": "5/19/2023 23:55:00",
-            "index": 86,
+            "index": 87,
             "discord": "losfroger#8927",
             "tako_pfp": "",
             "twitter": "@losfroger",
